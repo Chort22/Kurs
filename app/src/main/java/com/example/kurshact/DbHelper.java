@@ -33,7 +33,7 @@ public class DbHelper extends SQLiteOpenHelper {
         db.execSQL("CREATE TABLE " + TABLE_TOVAR + " (id INTEGER PRIMARY KEY AUTOINCREMENT, name TEXT)");
 
         // Вставляем пример данных в таблицу товаров
-        db.execSQL("INSERT INTO " + TABLE_TOVAR + " (name) VALUES ('Товар 1'), ('Товар 2'), ('Товар 3')");
+        //db.execSQL("INSERT INTO " + TABLE_TOVAR + " (name) VALUES ('Товар 1'), ('Товар 2'), ('Товар 3')");
     }
 
     @Override
