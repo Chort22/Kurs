@@ -31,9 +31,10 @@ public class DbHelper extends SQLiteOpenHelper {
 
         // Создаем таблицу товаров
         db.execSQL("CREATE TABLE " + TABLE_TOVAR + " (id INTEGER PRIMARY KEY AUTOINCREMENT, name TEXT)");
+        // db.execSQL("DELETE FROM " + TABLE_TOVAR);
 
         // Вставляем пример данных в таблицу товаров
-        //db.execSQL("INSERT INTO " + TABLE_TOVAR + " (name) VALUES ('Товар 1'), ('Товар 2'), ('Товар 3')");
+        //db.execSQL("INSERT INTO " + TABLE_TOVAR + " (name) VALUES ('Сервелат охотничий 250'), ('Сервелат Св 300'), ('Сосиски премиум 800'), ('Молочные сосиски 600'), ('Филейная вар 200'), ('Коровино вар 340'), ('Коровино со шпиком вар. 330')");
     }
 
     @Override

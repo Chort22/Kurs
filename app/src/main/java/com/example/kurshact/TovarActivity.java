@@ -19,13 +19,19 @@ public class TovarActivity extends AppCompatActivity {
         setContentView(R.layout.tovar);
 
         listViewItems = findViewById(R.id.listViewItem);
-        dbHelper = new DbHelper(this);
+        String[] data = {"Сервелат охотничий 250", "Сервелат Св 300", "Сосиски премиум 800", "Сосиски премиум 800", "Молочные сосиски 600", "Филейная вар 200", "Коровино вар 340", "Коровино со шпиком вар. 330"};
+        ArrayAdapter<String> adapter  = new ArrayAdapter(this,android.R.layout.simple_list_item_1, data);
+        listViewItems.setAdapter(adapter);
+
+
+
+        //dbHelper = new DbHelper(this);
 
         // Получаем товары из базы данных
-        List<String> items = dbHelper.getAllTovars();
+        //List<String> items = dbHelper.getAllTovars();
 
         // Устанавливаем адаптер для ListView
-        ArrayAdapter<String> adapter = new ArrayAdapter<>(this, android.R.layout.simple_list_item_1, items);
-        listViewItems.setAdapter(adapter);
+        //ArrayAdapter<String> adapter = new ArrayAdapter<>(this, android.R.layout.simple_list_item_1, items);
+        //listViewItems.setAdapter(adapter);
     }
 }
