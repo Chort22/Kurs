@@ -47,7 +47,7 @@ public class Zakaz extends AppCompatActivity {
             Toast.makeText(this, "All fields must be filled in", Toast.LENGTH_SHORT).show();
         } else {
             // Все поля заполнены, выполните нужное действие
-            Toast.makeText(this, "Заказ принят на обработку", Toast.LENGTH_SHORT).show();
+            Toast.makeText(this, "The order has been accepted for processing", Toast.LENGTH_SHORT).show();
         }
     }
 }
