@@ -24,6 +24,7 @@
 
         <activity android:name=".TovarActivity" />
         <activity android:name=".Zakaz" />
+        <activity android:name=".Reg" />
 
     </application>
 
