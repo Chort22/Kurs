@@ -8,8 +8,8 @@
 
     <EditText
         android:id="@+id/usernameEditText"
-        android:layout_width="379dp"
-        android:layout_height="57dp"
+        android:layout_width="352dp"
+        android:layout_height="53dp"
         android:hint="Логин"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -19,31 +19,31 @@
 
     <Button
         android:id="@+id/loginButton"
-        android:layout_width="411dp"
-        android:layout_height="wrap_content"
+        android:layout_width="377dp"
+        android:layout_height="59dp"
         android:text="Войти"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintHorizontal_bias="0.764"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.544" />
+        app:layout_constraintVertical_bias="0.575" />
 
     <Button
         android:id="@+id/registerButton"
-        android:layout_width="411dp"
-        android:layout_height="wrap_content"
+        android:layout_width="369dp"
+        android:layout_height="57dp"
         android:text="Зарегистрироваться"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintHorizontal_bias="0.619"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.626" />
+        app:layout_constraintVertical_bias="0.683" />
 
     <EditText
         android:id="@+id/passwordEditText"
-        android:layout_width="379dp"
+        android:layout_width="350dp"
         android:layout_height="55dp"
         android:hint="Пароль"
         app:layout_constraintBottom_toBottomOf="parent"
