@@ -32,8 +32,8 @@
 
     <EditText
         android:id="@+id/passwordEditText2"
-        android:layout_width="374dp"
-        android:layout_height="63dp"
+        android:layout_width="339dp"
+        android:layout_height="64dp"
         android:ems="10"
         android:hint="Логин"
         android:inputType="text"
@@ -46,8 +46,8 @@
 
     <EditText
         android:id="@+id/usernameEditText2"
-        android:layout_width="376dp"
-        android:layout_height="62dp"
+        android:layout_width="347dp"
+        android:layout_height="58dp"
         android:ems="10"
         android:hint="Пароль"
         android:inputType="text"

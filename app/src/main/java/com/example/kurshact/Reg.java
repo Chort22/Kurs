@@ -24,15 +24,20 @@ public class Reg extends AppCompatActivity {
         registerButton.setOnClickListener(v -> {
             String username = usernameEditText2.getText().toString();
             String password = passwordEditText2.getText().toString();
-            if (dbHelper.insertUser(username, password)) {
-                Toast.makeText(this, "Registration Successful", Toast.LENGTH_SHORT).show();
+            if(username.isEmpty() || password.isEmpty())
+            {Toast.makeText(getApplicationContext(), "Please fill in both fields.",Toast.LENGTH_SHORT).show();}
+            else {
+                if (dbHelper.insertUser(username, password)) {
+                    Toast.makeText(this, "Registration Successful", Toast.LENGTH_SHORT).show();
 
-                Intent intent = new Intent(Reg.this, MainActivity.class);
-                startActivity(intent);
-            } else {
-                Toast.makeText(this, "Registration Failed", Toast.LENGTH_SHORT).show();
+                    Intent intent = new Intent(Reg.this, MainActivity.class);
+                    startActivity(intent);
+                } else {
+                    Toast.makeText(this, "Registration Failed", Toast.LENGTH_SHORT).show();
+                }
             }
         });
+
 
     }
 
