@@ -22,7 +22,7 @@ public class TovarActivity extends AppCompatActivity {
         setContentView(R.layout.tovar);
 
         listViewItems = findViewById(R.id.listViewItem);
-        String[] data = {"Сервелат охотничий 250", "Сервелат Св 300", "Сосиски премиум 800", "Молочные сосиски 600", "Филейная вар 200", "Коровино вар 340", "Коровино со шпиком вар. 330"};
+        String[] data = {"Безе - 921р", "Зефир - 315р", "Бисквит - 320р", "Корзиночка - 266р", "Профитроли - 150р", "Пишмание - 279р", "Пастила - 499р", "Шифоновый бисквит - 785р", "Кулич - 759р", "Баумкухен - 1250р", "Трубочка с кремом - 216р", "Пища ангелов - 990р", "Папанаши - 300р", "Рацухи - 269р", "Олибол - 549р", "Валлийские лепёшки - 229р", "Диплес -    419р", "Сфенж - 154р"};
         ArrayAdapter<String> adapter  = new ArrayAdapter(this,android.R.layout.simple_list_item_1, data);
         listViewItems.setAdapter(adapter);
 

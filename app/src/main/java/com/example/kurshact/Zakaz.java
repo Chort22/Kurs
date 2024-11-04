@@ -1,5 +1,6 @@
 package com.example.kurshact;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.text.TextUtils;
 import android.view.View;
@@ -25,7 +26,7 @@ public class Zakaz extends AppCompatActivity {
 
         name = findViewById(R.id.editTextFam);
         Surname = findViewById(R.id.editTextText3);
-        Address = findViewById(R.id.editTextText4);
+
         Number = findViewById(R.id.editTextText5);
         button = findViewById(R.id.buttonzakaz);
 
@@ -40,14 +41,15 @@ public class Zakaz extends AppCompatActivity {
     private void checkInput() {
         String input1 = name.getText().toString().trim();
         String input2 = Surname.getText().toString().trim();
-        String input3 = Address.getText().toString().trim();
         String input4 = Number.getText().toString().trim();
-        if (TextUtils.isEmpty(input1) || TextUtils.isEmpty(input2) ||
-                TextUtils.isEmpty(input3) || TextUtils.isEmpty(input4)) {
+        if (TextUtils.isEmpty(input1) || TextUtils.isEmpty(input2) || TextUtils.isEmpty(input4)) {
             Toast.makeText(this, "All fields must be filled in", Toast.LENGTH_SHORT).show();
+
         } else {
-            // Все поля заполнены, выполните нужное действие
+            // пїЅпїЅпїЅ пїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ, пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ
             Toast.makeText(this, "The order has been accepted for processing", Toast.LENGTH_SHORT).show();
+            Intent intent = new Intent(Zakaz.this, TovarActivity.class);
+            startActivity(intent);
         }
     }
 }

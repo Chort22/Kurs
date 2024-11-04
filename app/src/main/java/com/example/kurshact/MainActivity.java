@@ -29,13 +29,8 @@ public class MainActivity extends AppCompatActivity {
         registerButton.setOnClickListener(v -> {
             Intent intent = new Intent(MainActivity.this, Reg.class);
             startActivity(intent);
-           // String username = usernameEditText.getText().toString();
-           // String password = passwordEditText.getText().toString();
-           // if (dbHelper.insertUser(username, password)) {
-           //     Toast.makeText(this, "Registration Successful", Toast.LENGTH_SHORT).show();
-           //} else {
-            //    Toast.makeText(this, "Registration Failed", Toast.LENGTH_SHORT).show();
-            //}
+
+
         });
 
         // Авторизация пользователя
